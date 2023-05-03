@@ -1,1 +1,654 @@
-Hello World
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta property="og:title" content="Etonix Pyro | Developer Portfolio">
+        <meta property="og:description" content="Developer Portfolio for Etonix Pyro">
+        <meta property="og:image" content="https://www.shadowed.xyz/portfolio/images/EtonixPyroPortfolio_Black.png">
+        <meta property="og:url" content="https://www.shadowed.xyz/portfolio/">
+        <meta name="description" content="Etonix Pyro | Developer Portfolio">
+        <meta name="author" content="Etonix Pyro">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="https://www.shadowed.xyz/portfolio/">
+        <meta name="twitter:creator" content="@etonix">
+        <meta name="twitter:title" content="Etonix Pyro | Developer Portfolio">
+        <meta name="twitter:description" content="Etonix Pyro | Developer Portfolio">
+        <meta name="twitter:image" content="https://www.shadowed.xyz/portfolio/images/EtonixPortfolio_Twitter.png">
+        <meta name="twitter:url" content="https://www.shadowed.xyz/portfolio/">
+        <meta name="twitter:domain" content="shadowed.xyz">
+        <meta name="twitter:label1" content="Written in">
+        <meta name="twitter:data1" content="HTML, CSS, JavaScript">
+        <meta name="twitter:label2" content="Developed by">
+        <meta name="twitter:data2" content="Etonix Pyro">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <title>Etonix Pyro | Developer Portfolio</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Poppins, sans-serif;
+                background-color: #1a1a1a;
+                color: #999;
+            }
+            .fas, .fab, .far {
+                color: #7234ad;
+                size: 25em;
+            }
+            hr {
+                border: 0;
+                height: 4px;
+                max-width: 80%;
+                width: 50%;
+                background: #333;
+                background-image: linear-gradient(to right, #7234ad, #333, #7234ad);
+                margin-top: 1.25rem;
+            }
+            textarea {
+                resize: none;
+            }
+            input:-webkit-autofill, input:-webkit-autofill:focus {
+                transition: background-color 600000s 0s, color 600000s 0s;
+            }
+            .container {
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+            .header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #333;
+                color: #999;
+                border-image: linear-gradient(to right, #7234ad, #333, #7234ad);
+                border-bottom: 4px solid transparent;
+                border-image-slice: 1;
+                padding: 0 2rem;
+            }
+            .header-left {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            .header-left img {
+                height: 1.5rem;
+                margin-right: 1rem;
+            }
+            .header-left h1 {
+                margin: 0;
+                font-family: "steamwreck";
+                color: #7234ad;
+            }
+            .header-right ul {
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                padding: 0;
+            }
+            .header-right ul li {
+                margin: 0 1rem;
+            }
+            .header-right ul li a {
+                color: #fff;
+                text-decoration: none;
+            }
+            .header-right ul li a:hover {
+                color: #7234ad;
+            }
+            .content {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0 2rem;
+                background-color: #1a1a1a;
+                color: #999;
+            }
+            .about {
+                width: 100%;
+                max-width: 800px;
+            }
+            .about h1 {
+                color: #7234ad;
+                font-family: "steamwreck";
+                font-size: 3rem;
+                text-align: center;
+            }
+            .skillscontainer {
+                width: 100%;
+                max-width: 800px;
+                margin: 0 auto;
+                color: #999;
+            }
+            .skillscontainer h1 {
+                font-family: "steamwreck";
+                font-size: 3rem;
+                color: #7234ad;
+                text-align: center;
+            }
+            .skills {
+                max-width: 100%;
+                width: 100%;
+                background-color: #333;
+                border: 3px solid #2b2b2b;
+            }
+            .skill {
+                max-width: 100%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                display: flex;
+                flex-direction: row;
+            }
+            .skill p {
+                margin: 0 0 0 10px;
+                padding-left: 10px;
+                width: 50%;
+                font-size: 1rem;
+                font-weight: bold;
+                font-family: Poppins, sans-serif;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                text-align: left;
+            }
+            .skill span {
+                color: #CCC;
+                text-align: right;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin: 0 10px 0 0;
+                width: 50%;
+                font-weight: bold;
+                font-family: Poppins, sans-serif;
+            }
+            .html5 {
+                width: 90%;
+                background-color: #735F32;
+                color: #CCC;
+            }
+            .css3 {
+                width: 80%;
+                background-color: #083358;
+                color: #CCC;
+            }
+            .javascript {
+                width: 70%;
+                background-color: #2E4F4F;
+                color: #CCC;
+            }
+            .php {
+                width: 75%;
+                background-color: #635985;
+                color: #CCC;
+            }
+            .sql {
+                width: 60%;
+                background-color: #C06C84;
+                color: #CCC;
+            }
+            .unity {
+                width: 85%;
+                background-color: #F58840;
+                color: #CCC;
+            }
+            .csharp {
+                width: 60%;
+                background-color: #064663;
+                color: #CCC;
+            }
+            .mudos {
+                width: 90%;
+                background-color: #4C0033;
+                color: #CCC;
+            }
+
+            .projects {
+                width: 100%;
+                max-width: 800px;
+                color: #7234ad;
+            }
+            .projects h1 {
+                font-family: "steamwreck";
+                font-size: 3rem;
+                text-align: center;
+            }
+            .project {
+                margin: 2rem 0;
+                color: #999;
+            }
+            .project h3 {
+                margin: 0 0 0 2rem;
+            }
+            .contact {
+                width: 100%;
+                max-width: 800px;
+            }
+            .contact h1 {
+                color: #7234ad;
+                font-family: "steamwreck";
+                font-size: 3rem;
+                text-align: center;
+            }
+            .contact form {
+                margin: 2rem 0;
+                max-width: 800px;
+                width: 100%;
+                display: flex;  
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact form label {
+                color: #7234ad;
+                font-weight: bold;
+                font-size: 1.5rem;
+                margin: 0 0 0.5rem 0;
+                text-align: center;
+                max-width: 80%;
+                width: 100%;
+            }
+            .contact form input, .contact form textarea {
+                padding: 0.5rem;
+                border: 2px solid #7234ad;
+                border-radius: 0.25rem;
+                margin: 0 0 1rem 0;
+                background-color: #222!important;
+                color: #7234ad!important;
+                max-width: 80%;
+                width: 100%;
+            }
+            .contact form input:focus, .contact form textarea:focus {
+                outline: none;
+                border-color: #555;
+                background-color: #333!important;
+                color: #999!important;
+                width: 100%;
+            }
+            .contact form button, .contact form input[type="submit"] {
+                padding: 0.5rem;
+                background-color: #222;
+                color: #7234ad!important;
+                cursor: pointer;
+                font-size: 2.5rem;
+                font-family: "steamwreck";
+                font-weight: bold;
+                max-width: 80%;
+                width: 100%;
+                border: 2px solid #7234ad;
+                border-radius: 0.25rem;
+            }
+            .contact form button:hover, .contact form input[type="submit"]:hover {
+                border:2px solid #6523A3;
+                transform: scale(1.02);
+                color: #6523A3!important;
+                background-color:#333!important;
+            }
+            .contact form button:focus, .contact form input[type="submit"]:focus {
+                border: 2px dashed #6523A3;
+                transform: scale(1.02);
+                color: #6523A3!important;
+                background-color:#222!important;
+            }
+            .contact form button:active:hover, .contact form input[type="submit"]:active:hover {
+                border: 2px solid #7234ad;
+                transform: scale(0.92);
+                color: #7234ad!important;
+                background-color:#333!important;
+            }
+            .contact form #captchadiv {
+                max-width: 800px;
+                margin: 0 0 1rem 0;
+                padding: 0;
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+            }
+            .contact form #captchadiv img {
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                margin: 0 1rem;
+                max-width: 50%;
+                width: 100%;
+                justify-content: flex-start;
+                align-self:first baseline;
+                border: 2px solid #7234ad;
+
+            }
+            .contact form #captchadiv input {
+                padding: 0.5rem;
+                border: 2px solid #7234ad;
+                color: #7234ad!important;
+                background-color: #222!important;
+                border-radius: 0.25rem;
+                margin: 0 1rem;
+                max-width: 50%;
+                height: 30px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-self:last baseline;
+                justify-content: flex-end;
+            }
+            .contact form #captchadiv input:focus {
+                outline: none;
+                border-color: silver;
+                background-color: #333!important;
+                color: #999!important;
+            }
+            .contact .response {
+                margin: 2rem 0;
+                max-width: 100%;
+                width: 100%;
+                display: flex;  
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                font-size: 2rem;
+                font-weight: bold;
+                font-family: Poppins, sans-serif;
+                color: #CCC;
+            }
+            .footer {
+                background-color: #333;
+                color: #999;
+                padding: 2rem;
+                border-image: linear-gradient(to right, #7234ad, #333, #7234ad);
+                border-top: 4px solid transparent;
+                border-image-slice: 1;
+            }
+            .footer p {
+                margin: 0;
+                text-align: center;
+                font-weight: bold;
+            }
+            @media (min-width: 769px) {
+                .header {
+                    position: fixed;
+                    top: 0;
+                    max-width: 100%;
+                    width: inherit;
+                }
+                .header-right {
+                  padding-right: 4rem;
+                }
+                .header + .content h1, .header + .content hr {
+                    margin-top: 3rem;
+                }
+            }
+            @media (max-width: 768px) {
+                body, .container {
+                    max-width: 100%;
+                    width: 100%;
+                    margin: 0;
+                    text-align: center;
+                }
+                .header {
+                    flex-direction: column;
+                    max-width: 100%;
+                    margin: 0 auto;
+                    text-align: center;
+                    width: 100%;
+                    padding: 0;
+                }
+                .header-left {
+                    margin: 0 0 1rem 0;
+                    max-width: 100%;
+                    text-align: center;
+                }
+                .header-right {
+                    margin: 1rem 0 0 0;
+                    max-width: 100%;
+                    width: 100%;
+                }
+                .header-right ul {
+                    flex-direction: column;
+                    width: 100%;
+                    max-width: 100%;
+                }
+                .header-right ul li {
+                    margin: 0;
+                    max-width: 100%;
+                    height: 2rem;
+                    padding: 1rem;
+                }
+                .content {
+                    padding: 0 1rem;
+                }
+                .about {
+                    text-align: center;
+                    width: 100%;
+                }
+                .projects {
+                    width: 100%;
+                    text-align: center;
+                }
+                .contact {
+                    text-align: center;
+                    max-width: 100%;
+                }
+                .contact h1 {
+                    text-align: center;
+                }
+                .contact form {
+                    max-width: 100%;
+                }
+                .contact form label {
+                    max-width: 100%;
+                }
+                .contact form input, .contact form textarea {
+                    max-width: 100%;
+                }
+                .contact form button, .contact form input[type="submit"] {
+                    max-width: 100%;
+                }
+                .header-right ul li:hover {
+                    background-color: #444;
+                    max-width: 100%;
+                }
+                .header-right ul li a:hover {
+                    color: #CCC;
+                }
+                .header-right ul li:nth-child(even) {
+                    margin: 0;
+                    border-top: 2px solid #7234ad;
+                    border-bottom: 2px solid #7234ad;
+                    max-width: 100%;
+                }
+                h1, h1 {
+                    text-align: center;
+                }
+                .contact form {
+                    max-width: 100%;
+                }
+                .contact form #captchadiv {
+                    max-width: 100%;
+                }
+            }
+            @font-face {
+                font-family: 'steamwreck';
+                src: url('fonts/steamwreck.woff2') format('woff2'),
+                url('fonts/steamwreck.woff') format('woff'),
+                url('fonts/steamwreck.svg#steamwreckregular') format('svg');
+                font-weight: normal;
+                font-style: normal;
+            }
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="header-left">
+                    <img src="images/ShadowedSoul_150x150.png">
+                    <h1>Etonix Pyro | Developer Portfolio</h1>
+                </div>
+                <div class="header-right">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="https://www.shadowed.games/uas" target="_blank">Products</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="about" id="about">
+                    <h1>ABOUT ME</h1>
+                    <p>Etonix Pyro is a creative, gigantic man-child unleashed upon the world with a rather uncanny weapon - a keyboard! Wielding this noisy slab of clicks, he skillfully weaves strange symbols into masterpieces. Based in the United States with over fifteen years of experience in the industry, when not working as a freelance developer or consultant,
+                    he can be found working on <a href="https://www.shadowed.games/uas" target="_blank">assets for the Unity Asset Store.</a> Etonix Pyro is the founder of <a href="https://www.shadowed.studio" target="_blank">Shadowed Souls Studios</a>, an independent game studio and consulting agency.</p>
+                </div>
+                <hr id="skills">
+                <div class="skillscontainer" id="skillscontainer">
+                    <h1>PROGRAMMING PROFICIENCY</h1>
+                    <p>Below is a list of programming languages and frameworks that I am proficient in.</p>
+                    <div class="skills">
+                        <div class="skill html5"><p>HTML5</p><span>90%</span></div>
+                    </div>
+                    <div class="skills">
+                        <div class="skill css3"><p>CSS3</p><span>80%</span></div>
+                    </div>
+                    <div class="skills">
+                        <div class="skill javascript"><p>JavaScript</p><span>70%</span></div>
+                    </div>
+                    <div class="skills">
+                        <div class="skill php"><p>PHP</p><span>75%</span></div>
+                    </div>
+                    <div class="skills">
+                        <div class="skill sql"><p>SQL</p><span>60%</span></div>
+                    </div>
+                    <div class="skills">
+                        <div class="skill unity"><p>Unity</p><span>85%</span></div>
+                    </div>
+                    <div class="skills">
+                        <div class="skill csharp"><p>CSharp (C#)</p><span>60%</span></div>
+                    </div>
+                    <div class="skills">
+                        <div class="skill mudos"><p>LPC (MudOS)</p><span>90%</span></div>
+                    </div>
+                </div>
+                <hr>
+                <div class="projects" id="projects">
+                    <h1>MY RECENT PROJECTS</h1>
+                    <div class="project">
+                        <h3>UMA for RPG Builder</h3>
+                        <p><a href="https://www.shadowed.games/RPGBUMA" target="_blank">UMA for RPG Builder</a> is a plugin for RPG Builder that allows users to use UMA 2.0 characters in their projects with ease.</p>
+                    </div>
+                    <div class="project">
+                        <h3>ShadowBox: Game Toolkit</h3>
+                        <p>ShadowBox: Game Toolkit is the successor to <a href="https://www.shadowed.games/ShadowBox" target="_blank">ShadowBox: Interactivity Toolkit.</a> It is modular in design, with each module adding a new feature to the toolkit. The base product will include the following modules: </p>
+                        <ul>
+                            <li>Archivist, a save/load module for character and game data.</li>
+                            <li>Interactions, an interactivity module for game objects.</li>
+                            <li>Magellan, a minimap, compass, and location marker module for player guidance.</li>
+                            <li>Stagehand, a scene management and loading screen module</li>
+                            <li>... and many more to come!</li>
+                        </ul>
+                        <p>It is currently in development and will be released soon.</p>
+                    </div>
+                    <div class="project">
+                        <h3>Asset Invoice Verification Bot</h3>
+                        <p>A Discord bot that grants roles to members of the server that provide a valid invoice from the Unity Asset Store or Shopify, and optional GitHub Repository access per package. Additionally, any messages containing hyperlinks for the Unity Asset Store or Humble Bundle are automatically filtered and restored with appropriate affiliate marketing data.
+                            This is a managed service currently available to Unity Asset Store Publishers. Also available without Discord integration as a web service.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="contact" id="contact">
+                    <h1>CONTACT ME</h1>
+                    <form action="contact.php" method="post" id="contactForm">
+                        <label for="name">NAME</label><br>
+                        <input type="text" id="name" name="name" placeholder="Your name.."><br>
+                        <label for="email">EMAIL</label><br>
+                        <input type="text" id="email" name="email" placeholder="Your email.."><br>
+                        <label for="subject">SUBJECT</label><br>
+                        <input type="text" id="subject" name="subject" placeholder="Subject.."><br>
+                        <label for="message">MESSAGE</label><br>
+                        <textarea id="message" name="message" placeholder="Your message.." style="height:200px"></textarea><br>
+                        <label for="captcha">SECURITY QUESTION</label><br>
+                        <div id="captchadiv">
+                            <img id="captchaImage" src="security.php?light=true" width="160" height="45" border="1" alt="Prove you're not a robit!">
+                            <input type="text" id="captcha" name="captcha" placeholder="Enter the code">
+                        </div>
+                        <input type="submit" value="SUBMIT">
+                    </form>
+                    <div id="response" style="display: none;"></div>
+                    <script>
+                        function validateForm() {
+                            var x = document.forms["contactForm"]["name"].value;
+                            if (x == "") {
+                                alert("Name must be filled out");
+                                return false;
+                            }
+                            var x = document.forms["contactForm"]["email"].value;
+                            // check if email is valid with regex
+                            var emailRegex = /\S+@\S+\.\S+/;
+                            if (!emailRegex.test(x) || x.includes(" "))  {
+                                alert("Email must be valid");
+                                return false;
+                            }
+                            if (x == "") {
+                                alert("Email must be filled out");
+                                return false;
+                            }
+                            var x = document.forms["contactForm"]["subject"].value;
+                            if (x == "") {
+                                alert("Subject must be filled out");
+                                return false;
+                            }
+                            var x = document.forms["contactForm"]["message"].value;
+                            if (x == "") {
+                                alert("Message must be filled out");
+                                return false;
+                            }
+                            var x = document.forms["contactForm"]["captcha"].value;
+                            if (x == "") {
+                                alert("Security code must be filled out");
+                                return false;
+                            }
+                            return true;
+                        }
+                        document.getElementById("contactForm").addEventListener("submit", function(e){
+                            e.preventDefault(); // prevent the form from submitting
+
+                            // cancel if validation fails else submit
+                            if(!validateForm()) {
+                                return;
+                            }
+                            document.getElementById("response").style.display = "none";
+                            var form = document.getElementById("contactForm"); // storing the form
+                            var formData = new FormData(form); // creating a new FormData object
+                            var xhr = new XMLHttpRequest(); // creating a new XMLHttpRequest object
+                            xhr.open("POST", "contact.php"); // opening the connection to the PHP file
+                            xhr.onreadystatechange = function() { // creating an event handler for when the state of the response changes
+                                if (xhr.readyState === 4) { // if the request is complete
+                                    if(xhr.responseText.includes("BADCAPTCH")) {
+                                        document.getElementById("captchadiv").innerHTML = '<img id="captchaImage" src="security.php?light=true" width="160" height="45" border="1" alt="Prove you\'re not a robit!">';
+                                        document.getElementById("captchadiv").innerHTML += '<input type="text" id="captcha" name="captcha" placeholder="Enter the code">';
+                                        document.getElementById("response").style.display = "block";
+                                        document.getElementById("response").innerHTML = '<p style="color: red;">CAPTCHA failed. Try again.</p>'; // display the response
+                                    } else {
+                                        form.style.display = "none";
+                                        document.getElementById("response").innerHTML = xhr.responseText; // display the response
+                                        document.getElementById("response").style.display = "flex";
+                                    }
+                                }
+                            };
+                        
+                            xhr.send(formData); // sending the form data to the PHP file
+
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Etonix Pyro | Developer Portfolio - Copyright 2023, Etonix Pyro. All Rights Reserved</p>
+            </div>
+        </div>
+    </body>
+</html>

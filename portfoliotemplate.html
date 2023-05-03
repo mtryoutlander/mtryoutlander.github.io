@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Game Developer Portfolio</title>
+  <meta name="description" content="Game Developer Portfolio">
+  <meta name="author" content="Game Developer Portfolio">
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        }
+        .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        }
+        .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        padding: 0 2rem;
+        }
+        .header-left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        }
+        .header-left h1 {
+        margin: 0;
+        }
+        .header-right ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        padding: 0;
+        }
+        .header-right ul li {
+        margin: 0 1rem;
+        }
+        .header-right ul li a {
+        color: #fff;
+        text-decoration: none;
+        }
+        .header-right ul li a:hover {
+        color: #7234ad;
+        }
+        .content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2rem;
+        background-color: #1a1a1a;
+        color: #999;
+        }
+        .about {
+        width: 100%;
+        max-width: 800px;
+    }
+    .about h2 {
+        color: #7234ad;
+    }
+    .projects {
+        width: 100%;
+        max-width: 800px;
+        color: #7234ad;
+    }
+    .project {
+        margin: 2rem 0;
+        color: #999;
+        }
+        .project h3 {
+            margin: 0;
+        }
+        .contact {
+            width: 100%;
+            max-width: 800px;
+
+        }
+        .contact h2 {
+                color: #7234ad;
+            }
+        .footer {
+        background-color: #333;
+        color: #999;
+        padding: 2rem;
+        }
+        .footer p {
+        margin: 0;
+        }
+        @media (max-width: 768px) {
+        .header {
+            flex-direction: column;
+        }
+        .header-left {
+            margin-bottom: 1rem;
+        }
+        .header-right {
+            margin-top: 1rem;
+        }
+        .header-right ul {
+            flex-direction: column;
+        }
+        .header-right ul li {
+            margin: 1rem 0;
+        }
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-left">
+        <h1>Game Developer Portfolio</h1>
+      </div>
+      <div class="header-right">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <div class="about" id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl. N
+        unc euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl.</p>
+        </div>
+        <div class="projects" id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl. N
+                unc euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl. N
+                unc euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl.</p>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl. N
+                unc euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl.</p>
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl. N
+            unc euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Game Developer Portfolio</p>
+    </div>
+    </div>
+</body>
+</html>
+
+

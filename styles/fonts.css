@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'steamwreck';
+    src: url('fonts/steamwreck.woff2') format('woff2'),
+         url('fonts/steamwreck.woff') format('woff'),
+         url('fonts/steamwreck.svg#steamwreckregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
